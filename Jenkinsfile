@@ -1,9 +1,9 @@
 pipeline{
 
-	agent {label 'linux'}
+	agent any
 
 	environment {
-		DOCKERHUB_CREDENTIALS=credentials('dockerhub')
+		DOCKERHUB_CREDENTIALS=credentials('reshu-dockerhub')
 	}
 
 	stages {
