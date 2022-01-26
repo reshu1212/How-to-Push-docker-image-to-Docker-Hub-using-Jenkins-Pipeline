@@ -32,7 +32,7 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				bat 'docker tag 9426ad69e2e4 reshudocker/my-repo1'| 'docker push thetips4you/nodeapp_test:latest'
+				bat 'docker tag 83045e654fbd reshudocker/my-repo1'| 'docker push thetips4you/nodeapp_test:latest'
 			}
 		}
 	}
