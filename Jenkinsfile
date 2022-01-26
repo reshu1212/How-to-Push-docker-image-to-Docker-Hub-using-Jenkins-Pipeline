@@ -32,7 +32,8 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				bat 'docker tag thetips4you/nodeapp_test reshudocker/my-repo1' && 'docker push thetips4you/nodeapp_test:latest'
+				
+				bat 'echo $DOCKERHUB_CREDENTIALS_PSW && docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
 			}
 		}
 	}
