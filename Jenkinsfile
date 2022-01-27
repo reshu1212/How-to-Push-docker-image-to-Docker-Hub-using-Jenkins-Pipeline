@@ -34,8 +34,8 @@ pipeline{
 			steps {
 				
 			
-				bat 'docker tag thetips4you/nodeapp_test reshudocker/my-repo1'
-				bat 'docker push reshudocker/my-repo1'
+				bat 'docker tag thetips4you/nodeapp_test reshudocker/my-repo2'
+				bat 'docker push reshudocker/my-repo2'
 			}
 		}
 	}
