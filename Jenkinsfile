@@ -33,7 +33,9 @@ pipeline{
 
 			steps {
 				
-				bat 'echo $DOCKERHUB_CREDENTIALS_PSW && docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
+			
+				bat 'docker tag thetips4you/nodeapp_test reshudocker/my-repo1'
+				bat 'docker push reshudocker/my-repo1'
 			}
 		}
 	}
