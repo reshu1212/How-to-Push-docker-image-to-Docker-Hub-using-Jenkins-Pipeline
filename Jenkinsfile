@@ -25,7 +25,9 @@ pipeline{
 		stage('Login') {
 
 			steps {
-				bat 'docker login -u reshudocker -p docker123'
+				// bat 'docker login -u reshudocker -p docker123'
+				bat 'docker login -u $DOCKERHUB_CREDENTIALS_USR -p DOCKERHUB_CREDENTIALS_PSW'
+				
 			}
 		}
 
